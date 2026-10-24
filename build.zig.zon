@@ -1,0 +1,17 @@
+.{
+    .name = .fit,
+    .version = "0.1.0",
+    .minimum_zig_version = "0.17.0",
+    .fingerprint = 0x504c0b4b72462a2e,
+    .paths = .{
+        "src",
+        "tools",
+        "build.zig",
+        "build.zig.zon",
+    },
+    .dependencies = .{
+        .json = .{
+            .path = "../json-zig",
+        },
+    },
+}
