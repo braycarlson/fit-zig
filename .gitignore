@@ -1,0 +1,7 @@
+.data/
+.env
+.tigerstyle_cache/
+.zig-cache/
+__pycache__/
+zig-out/
+zig-pkg/

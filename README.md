@@ -1,0 +1,3 @@
+# fit-zig
+
+A decoder and encoder for the FIT file format, with a slicing-by-8 checksum based on [Kounavis and Berry (2005)](https://doi.org/10.1109/ISCC.2005.18). The message profile is generated from the FIT SDK's `Profile.xlsx`, so each field decodes with its name, scale, and units, and the encoder writes a file back out for a full round trip. The library also names the private Garmin messages the official profile leaves out, each marked as measured or reported. The decoder and the encoder allocate nothing, since each works in storage the caller sizes at compile time or lends as a buffer, and a decoded message borrows from that storage and from the source bytes until the next call. A command-line tool dumps a file as text, JSON, or CSV.
